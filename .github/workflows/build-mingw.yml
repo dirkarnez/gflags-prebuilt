@@ -11,10 +11,10 @@ jobs:
     name: Create Release
     runs-on: windows-2019
     env:
-      libraryName: mbedtls
-      cmakeInstallationPath: mbedtls-installation
+      libraryName: gflags
+      cmakeInstallationPath: gflags-installation
       tagName: v2.2.2
-      mingwTargetZip: mbedtls-${{ github.ref_name }}-x86_64-posix-seh-rev0-8.1.0.zip
+      mingwTargetZip: gflags-${{ github.ref_name }}-x86_64-posix-seh-rev0-8.1.0.zip
     steps:
       - name: git clone
         shell: cmd
